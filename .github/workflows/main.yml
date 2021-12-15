@@ -28,5 +28,8 @@ jobs:
         with:
           node-version: '14'
       - run: node script.js
+      - run: git add .
+      - run: git commit -m "updating audio list"
+      - run: git push origin HEAD:main
 
 
