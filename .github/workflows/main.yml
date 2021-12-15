@@ -33,6 +33,7 @@ jobs:
       - run: node script.js
       - name: Commit 
         run: |
+          git add .
           git config --local user.email "sortofsleepy@gmail.com"
           git config --local user.name "sortofsleepy"
           git commit -m "Update audio list" -a
